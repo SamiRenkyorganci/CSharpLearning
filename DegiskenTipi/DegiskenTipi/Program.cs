@@ -37,11 +37,62 @@ namespace DegiskenTipi
 
             decimal b = a;
 
-           
+            //IF ELSE
 
+            int x = 22;
+            int y = 15;
 
+            if (x > y)
+            {
+                Console.WriteLine("x büyüktür y");
+            }
+            else
+                Console.WriteLine("y büyüktür x");
 
+            Console.WriteLine("-----------------");
+            //ELSE IF
+            x = 10;
+            y = 10;
+            if (x > y)
+            {
+                Console.WriteLine("x büyüktür y");
+            }
+            else if (x == y)
+            {
+                Console.WriteLine("y eşittir x");
+            }
+            else
+                Console.WriteLine("y büyüktür x");
+            //Switch Case
 
+            Console.WriteLine("-------------------------------");
+
+            int z = 12;
+
+            switch (z)
+            {
+                case 1:
+                    Console.WriteLine("1");
+                 break;
+                case 4:
+                    Console.WriteLine("4");
+                    break;
+                case 5:
+                    Console.WriteLine("5");
+                    break;
+                case 6:
+                case 7:
+                case 8:
+                    Console.WriteLine("6-7-8");
+                    break;
+                case 12:
+                    Console.WriteLine("Sayi bulundu");
+                    break;
+
+                default:
+                    break;
+
+            }
             Console.ReadLine();
 
 
