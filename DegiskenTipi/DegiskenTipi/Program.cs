@@ -23,6 +23,24 @@ namespace DegiskenTipi
 
             Console.WriteLine("Number1 {0}", number1);
             Console.WriteLine("Number3 {0}", number3);
+            Console.Clear();//Consolu temizler.
+
+            //Tür Dönüşümü (Parse)
+
+            // Bilinçli Tür Dönüşümü (Conscious Species Transformation)
+            decimal variable = 21;
+            int variable2 = (int)variable;
+
+            // Bilinçsiz Tür Dönüşümü (Unconscious Species Transformation)
+
+            int a = 2;
+
+            decimal b = a;
+
+           
+
+
+
 
             Console.ReadLine();
 
