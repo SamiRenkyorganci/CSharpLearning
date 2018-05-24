@@ -69,6 +69,10 @@ namespace SampleCalculator
                         Console.Write("İşlem Sonucu : {0}", sonuc);
                     }
                     break;
+                default:
+                    Console.WriteLine("Hatalı Giriş");
+                    Console.WriteLine("Uygulama Sonlandı");
+                    break;
 
 
             }
