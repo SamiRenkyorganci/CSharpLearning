@@ -55,19 +55,50 @@ namespace String_Çalismalari
             Console.WriteLine("Toplam 21'e ulaştığı için sayı girmenize gerek yoktur.");
             }
 
+        private static string[] yenidenboyutlandır(string[] dizi, int limit)
+        {
+            string[] temp = new string[limit];
 
+            for (int i = 0; i < dizi.Length; i++)
+            {
+                temp[i] = dizi[i];
 
-        
+            }
+
+            return temp;
+        }
 
 
 
         static void Main(string[] args)
         {
-
             Program cl = new Program();
+            string[] isimler = new string[5];
+            isimler[0] = "sami";
+            isimler[1] = "mehmet";
+            isimler[2] = "murat";
+            isimler[3] = "selma";
+            isimler[4] = "hatice";
+            //isimler = yenidenboyutlandır(isimler, isimler.Length + 1);
             //cl.tersyazdir();
             //cl.kelimebul();
-            cl.metot1();
+            //cl.metot1();
+
+            //Varlık Kontrolü
+
+            bool kontrol = Array.Exists(isimler, I => I == "hatice");
+
+            if (kontrol)
+            {
+                Console.WriteLine("Aradığınız değer koleksiyonda vardır.");
+                string deger = Array.Find(isimler, I => I == "sami");
+                Console.WriteLine("Array find  : "+deger);
+                int bulunanindex = Array.IndexOf(isimler, "mehmet");
+                Console.WriteLine("Indexof  : " + bulunanindex);
+                Array.Sort(isimler);//a-z ye sıralar 
+
+                Array.Reverse(isimler);//son indexten ilk indexe doğru sıralar
+            }
 
 
 
@@ -77,7 +108,10 @@ namespace String_Çalismalari
             Console.ReadLine();
 
         }
+      
 
-       
+
+
+
     }
 }
