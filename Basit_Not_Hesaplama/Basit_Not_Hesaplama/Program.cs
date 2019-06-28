@@ -20,7 +20,7 @@ namespace Basit_Not_Hesaplama
 
             if (vize > 100 || vize < 0 || final > 100 || final < 0)
             {
-                Console.WriteLine("Lütfen 0-100 arası değerler giriniz.");
+                Console.WriteLine("Girdiğiniz not 0-100 arasında bir değer olmalıdır...");
 
             }
 
